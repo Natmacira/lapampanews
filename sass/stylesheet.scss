@@ -12,20 +12,27 @@
 }
 
 body,
-h2 {
+figcaption {
     font-family: "Gudea", sans-serif;
     font-size: 15px;
 }
 
-h2 {
+figure {
+    position: relative;
+}
+
+figcaption {
     text-transform: uppercase;
     text-align: center;
     padding: 3px 15px;
     display: inline-block;
-    
-    &.category-section {
+
+    &.category-figure {
         background-color: #009ee2;
         color: white;
+        position: absolute;
+        left: 0;
+        bottom: 4px;
     }
 
     &.title-slider {
