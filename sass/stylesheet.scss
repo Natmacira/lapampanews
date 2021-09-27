@@ -66,6 +66,14 @@ h4 {
     width: 15px;
 }
 
-@media (min-width: 768px) {
-    
+main {
+    @media (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.main-articles {
+    @media (min-width: 768px) {
+        flex: 1 1 35%;
+    }
 }
