@@ -70,7 +70,7 @@ main {
     @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-      /*  grid-template-rows: repeat(8, 1fr); */
+        /*  grid-template-rows: repeat(8, 1fr); */
         grid-gap: 10px;
     }
 }
@@ -78,11 +78,18 @@ main {
 .main-articles {
     @media (min-width: 768px) {
         object-fit: cover;
-     
+        
+        
+        &:first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        
+        &#gif-diboxgo {
+            grid-row: span 3;
+            grid-column: span 3;
+        }
     }
 
-    &:first-child {
-        grid-column: span 2;
-        grid-row: span 2;
     }
-}
+
