@@ -68,12 +68,16 @@ h4 {
 
 main {
     @media (min-width: 768px) {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 10px;
     }
 }
 
 .main-articles {
     @media (min-width: 768px) {
-        flex: 1 1 35%;
+        object-fit: cover;
+        
     }
 }
