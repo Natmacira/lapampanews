@@ -67,15 +67,18 @@ h4 {
 }
 
 main {
-
+    
     max-width: 1000px;
     margin: 0 auto;
-
+    
     @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         /*  grid-template-rows: repeat(8, 1fr); */
         grid-gap: 10px;
+    }
+    @media (min-width: 1280px) {
+        margin: 0;
     }
 }
 
