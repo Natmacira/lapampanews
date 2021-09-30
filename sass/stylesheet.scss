@@ -11,6 +11,9 @@
     scroll-behavior: smooth;
 }
 
+$breakpoint-tablet : 768px;
+$breakpoint-smalldesktop: 1280px;
+
 body,
 figcaption {
     font-family: "Gudea", sans-serif;
@@ -76,19 +79,19 @@ main {
     max-width: 960px;
     margin: 0 auto;
     
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         /*  grid-template-rows: repeat(8, 1fr); */
         grid-gap: 10px;
     }
-    @media (min-width: 1280px) {
+    @media (min-width: $breakpoint-smalldesktop) {
         margin: 0;
     }
 }
 
 .main-articles {
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
         object-fit: cover;
 
         &:first-child {
@@ -123,12 +126,12 @@ aside {
     display: none;
     position: fixed;
     top: 1px;
-    right: 100px;
+    right: 40px;
     width: 23%;
     height: 100%;
     padding: 20px;
 
-    @media (min-width: 1280px) {
+    @media (min-width: $breakpoint-smalldesktop) {
         display: block;
     }
 }
