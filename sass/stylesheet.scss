@@ -133,14 +133,14 @@ aside {
 
 #ypf-publicity {
     display: none;
-    position: fixed;
-    top: 1px;
-    right: 40px;
-    width: 23%;
-    padding: 20px;
-
+    
     @media (min-width: $breakpoint-smalldesktop) {
         display: block;
+        position: fixed;
+        top: 1px;
+        right: 0;
+        width: 23%;
+        padding: 20px;
     }
 }
 
