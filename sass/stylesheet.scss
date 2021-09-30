@@ -46,6 +46,11 @@ figcaption {
 
 img {
     width: 100%;
+
+    
+    &.image-articles {
+        border: 1px solid #ccc;
+    }
 }
 
 article {
@@ -68,7 +73,7 @@ h4 {
 
 main {
     
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto;
     
     @media (min-width: 768px) {
@@ -116,13 +121,15 @@ aside {
 
 #ypf-publicity {
     display: none;
+    position: fixed;
+    top: 1px;
+    right: 100px;
+    width: 23%;
+    height: 100%;
+    padding: 20px;
 
     @media (min-width: 1280px) {
         display: block;
-        position: fixed;
-        top: 1px;
-        right: -10px;
-        width: 23%;
-        height: 100%;
     }
 }
+
