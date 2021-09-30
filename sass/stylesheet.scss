@@ -108,3 +108,21 @@ main {
         }
     }
 }
+
+
+aside {
+    position: relative;
+}
+
+#ypf-publicity {
+    display: none;
+
+    @media (min-width: 1280px) {
+        display: block;
+        position: fixed;
+        top: 1px;
+        right: -10px;
+        width: 23%;
+        height: 100%;
+    }
+}
