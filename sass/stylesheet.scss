@@ -14,6 +14,11 @@
 $breakpoint-tablet : 768px;
 $breakpoint-smalldesktop: 1280px;
 
+body {
+    max-width: 1200px;
+	margin: 0 auto;
+}
+
 body,
 figcaption {
     font-family: "Gudea", sans-serif;
@@ -128,7 +133,6 @@ aside {
     top: 1px;
     right: 40px;
     width: 23%;
-    height: 100%;
     padding: 20px;
 
     @media (min-width: $breakpoint-smalldesktop) {
