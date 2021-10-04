@@ -29,9 +29,6 @@ p#main-paragraph {
     margin-bottom: 20px;
 }
 
-figure {
-    position: relative;
-}
 
 figcaption {
     text-transform: uppercase;
@@ -54,6 +51,7 @@ figcaption {
         border-bottom: 2px solid;
         border-color: #009ee2;
     }
+    
 }
 
 img {
@@ -98,6 +96,11 @@ main {
 }
 
 .main-articles {
+
+    figure {
+        position: relative;
+    }
+
     @media (min-width: $breakpoint-tablet) {
         object-fit: cover;
 
@@ -142,4 +145,11 @@ aside {
         height: 600px;
         padding: 20px;
     }
+}
+
+.medium-rectangle {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
 }
