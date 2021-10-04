@@ -29,7 +29,6 @@ p#main-paragraph {
     margin-bottom: 20px;
 }
 
-
 figcaption {
     text-transform: uppercase;
 
@@ -51,7 +50,6 @@ figcaption {
         border-bottom: 2px solid;
         border-color: #009ee2;
     }
-    
 }
 
 img {
@@ -59,6 +57,12 @@ img {
 
     &.image-articles {
         border: 1px solid #ccc;
+    }
+
+    &.image-opinion {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
     }
 }
 
@@ -96,9 +100,14 @@ main {
 }
 
 .main-articles {
-
     figure {
         position: relative;
+    }
+
+    .figure-opinion {
+        border: 1px solid #ccc; 
+        padding: 10px 20px;
+        margin: 20px 0;
     }
 
     @media (min-width: $breakpoint-tablet) {
