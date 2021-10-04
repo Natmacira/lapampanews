@@ -11,12 +11,12 @@
     scroll-behavior: smooth;
 }
 
-$breakpoint-tablet : 768px;
+$breakpoint-tablet: 768px;
 $breakpoint-smalldesktop: 1280px;
 
 body {
-    max-width: 1200px;
-	margin: 0 auto;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 body,
@@ -59,7 +59,6 @@ figcaption {
 img {
     width: 100%;
 
-    
     &.image-articles {
         border: 1px solid #ccc;
     }
@@ -84,10 +83,9 @@ h4 {
 }
 
 main {
-    
     max-width: 960px;
     margin: 0 auto;
-    
+
     @media (min-width: $breakpoint-tablet) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -119,13 +117,13 @@ main {
 
         &#gif-flow {
             grid-column: span 3;
-            width: 75%;
+            width: 600px;
+            height: 300px;
             margin: 0 auto;
             display: block;
         }
     }
 }
-
 
 aside {
     position: relative;
@@ -133,14 +131,15 @@ aside {
 
 #ypf-publicity {
     display: none;
-    
+
     @media (min-width: $breakpoint-smalldesktop) {
         display: block;
         position: fixed;
         top: 1px;
-        right: 0;
-        width: 23%;
+        right: auto;
+        left: calc(50% + 330px);
+        width: 300px;
+        height: 600px;
         padding: 20px;
     }
 }
-
