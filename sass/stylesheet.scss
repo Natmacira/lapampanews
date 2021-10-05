@@ -142,8 +142,10 @@ main {
             width: 600px;
             height: 300px;
             margin: 0 auto;
+            padding: 0;
             display: block;
         }
+
 
         &#opinion {
             grid-row: span 3;
@@ -173,7 +175,7 @@ aside {
         left: calc(50% + 330px);
         width: 300px;
         height: 600px;
-        padding: 20px;
+        
     }
 }
 
@@ -189,4 +191,6 @@ aside {
     max-width: 708px;
     margin: 0 auto;
     display: block;
+    padding: 0;
 }
+
