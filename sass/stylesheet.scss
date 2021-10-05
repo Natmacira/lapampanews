@@ -57,13 +57,16 @@ figcaption {
         padding: 20px 0;
     }
 
-    &.figc-nombre {
-        font-size: 16px;
-        display: inline;
-        text-align: center;
-        padding: 25px;
-        vertical-align: top;
-    }
+}
+.span-opinion{
+    font-size: 16px;
+    display: inline;
+    padding: 16px;
+    vertical-align: top;
+}
+
+.div-opinion {
+    display: flex;
 }
 
 img {
