@@ -56,9 +56,8 @@ figcaption {
         font-weight: bold;
         padding: 20px 0;
     }
-
 }
-.span-opinion{
+.span-opinion {
     font-size: 16px;
     display: inline;
     padding: 16px;
@@ -121,12 +120,6 @@ main {
         position: relative;
     }
 
-    .figure-opinion {
-        border: 1px solid #ccc;
-        padding: 10px 20px;
-        margin: 20px 0;
-    }
-
     @media (min-width: $breakpoint-tablet) {
         object-fit: cover;
 
@@ -151,9 +144,20 @@ main {
             margin: 0 auto;
             display: block;
         }
+
+        &#opinion {
+            grid-row: span 3;
+            grid-column: span 3;
+        }
     }
 }
 
+.figure-opinion {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 20px 0;
+    height: 215px;
+}
 aside {
     position: relative;
 }
@@ -176,6 +180,13 @@ aside {
 .medium-rectangle {
     height: 250px;
     width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+#gif-diboxgo {
+    height: 90px;
+    max-width: 708px;
     margin: 0 auto;
     display: block;
 }
