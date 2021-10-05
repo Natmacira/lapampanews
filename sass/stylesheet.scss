@@ -30,7 +30,7 @@ p#main-paragraph {
 }
 
 figcaption {
-    text-transform: uppercase;
+    
 
     &.category-figure {
         text-align: center;
@@ -41,6 +41,7 @@ figcaption {
         position: absolute;
         left: 0;
         bottom: 4px;
+        text-transform: uppercase;
     }
 
     &.title-slider {
@@ -49,6 +50,12 @@ figcaption {
         font-weight: bold;
         border-bottom: 2px solid;
         border-color: #009ee2;
+        text-transform: uppercase;
+    }
+
+    &.figc-opinion {
+        font-size: 16px;
+        font-weight: bold;
     }
 }
 
