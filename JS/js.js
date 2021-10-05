@@ -2,17 +2,18 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
-const paragraphDescription = document.querySelectorAll('.descripcion')
+  const paragraphDescription = document.querySelectorAll('.descripcion')
 
-const button               = document.querySelector('#styleButton')
+  const button = document.querySelector('#styleButton')
 
   button.addEventListener('click', function () {
-    document.paragraphDescription.classList.toggle('descripcion-none');
+
+    document.body.main.paragraphDescription.classList.toggle('descripcion-none');
+  });
+
+
+
+
+
+
 });
-
-
-
-
-
-
-} ) ;
