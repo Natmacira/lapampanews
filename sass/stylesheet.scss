@@ -146,7 +146,6 @@ main {
             display: block;
         }
 
-
         &#opinion {
             grid-row: span 3;
             grid-column: span 3;
@@ -175,7 +174,6 @@ aside {
         left: calc(50% + 330px);
         width: 300px;
         height: 600px;
-        
     }
 }
 
@@ -194,6 +192,6 @@ aside {
     padding: 0;
 }
 
-.descripcion-none {
+body.descripcion-none p.descripcion {
     display: none;
 }
